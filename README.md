@@ -3,14 +3,22 @@
 This repository contains the following file structure: 
 
 -`code/`
+
 -`data/`
+
 -`figures/`
+
 -`renv/`
+
 -`report/`
+
 -`tables/`
+
 -`Makefile`
 - this file will restore the package environment (`install`), compile the report (`make`), and remove output (`make clean`)
-`README` (you are reading this now) 
+`README` (you are reading this now)
+
+-`renv.lock` and associated files (e.g., `R.history`) 
 
 # Code Description
 
