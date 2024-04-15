@@ -10,3 +10,7 @@ table1:
 .PHONY: clean
 clean:
 	rm -f tables/*.rds && rm -f figures/*.png && rm -f report/report.html
+
+.PHONY: install
+install:
+	Rscript -e "renv::restore(prompt = FALSE)"
