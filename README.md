@@ -1,3 +1,17 @@
+# Building a Docker Image
+
+- in your own working directory, navigate to your desired root directory for this project in Git Bash
+
+- once you are in the correct working directory, in Git Bash write `docker pull sswien/final`; alternatively you can copy the same code from the DockerHub link here: https://hub.docker.com/r/sswien/final
+
+- to run the target `make` in the `Makefile` to create the report, write one of the following: 
+
+  - if you are using Windows, to create the report enter `winpty docker run -v "/$(pwd)"/report:/project/report final` in your Git Bash terminal (depending on your computer you may not need to use `winpty`)
+
+  - if you are using a Mac/Linux, to create the report enter `winpty docker run -v "$(pwd)"/report:/project/report final` in your Git Bash terminal (again, depending on your computer you may not need to use `winpty`)
+  
+- to confirm that the report was generated, in Git Bash type `cd report`, and then `ls`: you should be able to see the `report.html` file
+
 # File Structure
 
 This repository contains the following file structure: 
@@ -20,6 +34,8 @@ This repository contains the following file structure:
 -`README` (you are reading this now)
 
 -`renv.lock` and associated files (e.g., `R.history`) 
+
+-`Dockerfile`
 
 # Code Description
 
