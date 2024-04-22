@@ -33,7 +33,7 @@ This repository contains the following file structure:
 
 -`README` (you are reading this now)
 
--`renv.lock` and associated files (e.g., `R.history`) 
+-`renv.lock` and associated files (e.g., `R.profile`) 
 
 -`Dockerfile`
 
