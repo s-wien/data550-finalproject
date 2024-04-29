@@ -9,6 +9,8 @@
   - Navigate to the desired directory you would like to set at the project directory (in Git Bash or RStudio)
 
   - To create the report enter `$ make final_report/build.html` in your Git Bash terminal (depending on your computer you may not need to use `winpty`)
+
+  - If you are using a Mac/Linux-OS, enter `$ makefinal_report_mac/build.html: `
   
 - To confirm that the report was generated, in Git Bash type `cd report`, and then `ls`: you should be able to see the `report.html` file
 

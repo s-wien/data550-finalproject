@@ -19,4 +19,6 @@ install:
 final_report/build.html: 
 	docker run -v "/$$(pwd)"/report:/project/report sswien/final
 
+final_report_mac/build.html: 
+	docker run -v "$$(pwd)"/report:/project/report sswien/final
 #to make the whole report run, enter $ make final_report/build.html
