@@ -13,7 +13,7 @@ clean:
 
 .PHONY: install
 install:
-	Rscript -e "renv::restore(prompt = FALSE)"
+	Rscript -e "renv::restore()"
 	
 #rule to build final report
 final_report/build.html: 
