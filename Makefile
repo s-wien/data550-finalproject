@@ -14,3 +14,9 @@ clean:
 .PHONY: install
 install:
 	Rscript -e "renv::restore(prompt = FALSE)"
+	
+#rule to build final report
+final_report/build.html: 
+	docker run -v "/$$(pwd)"/report:/project/report sswien/final
+
+#to make the whole report run, enter $ make final_report/build.html

@@ -2,13 +2,13 @@
 
 - In your own working directory, navigate to your desired root directory for this project in Git Bash
 
-- Once you are in the correct working directory, in Git Bash write `docker pull sswien/final`; alternatively you can copy the same code from the DockerHub link here: https://hub.docker.com/r/sswien/final
+- Once you are in the correct working directory, in Git Bash write `docker pull sswien/final` to download the Docker image; alternatively you can copy the same code from the DockerHub link here: https://hub.docker.com/r/sswien/final
 
-- To run the target `make` in the `Makefile` to create the report, write one of the following: 
+- To run the target in the `Makefile`
 
-  - if you are using Windows, to create the report enter `winpty docker run -v "/$(pwd)"/report:/project/report final` in your Git Bash terminal (depending on your computer you may not need to use `winpty`)
+  - Navigate to the desired directory you would like to set at the project directory (in Git Bash or RStudio)
 
-  - if you are using a Mac/Linux, to create the report enter `winpty docker run -v "$(pwd)"/report:/project/report final` in your Git Bash terminal (again, depending on your computer you may not need to use `winpty`)
+  - To create the report enter `$ make final_report/build.html` in your Git Bash terminal (depending on your computer you may not need to use `winpty`)
   
 - To confirm that the report was generated, in Git Bash type `cd report`, and then `ls`: you should be able to see the `report.html` file
 
